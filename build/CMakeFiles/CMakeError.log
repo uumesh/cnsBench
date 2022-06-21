@@ -1,0 +1,79 @@
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8c2e7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8c2e7.dir/build.make CMakeFiles/cmTC_8c2e7.dir/build
+gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8c2e7.dir/CheckFunctionExists.c.o
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc   -DCHECK_FUNCTION_EXISTS=sgemm_ -fPIE -o CMakeFiles/cmTC_8c2e7.dir/CheckFunctionExists.c.o -c /autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8c2e7
+/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c2e7.dir/link.txt --verbose=1
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc  -DCHECK_FUNCTION_EXISTS=sgemm_ -rdynamic CMakeFiles/cmTC_8c2e7.dir/CheckFunctionExists.c.o -o cmTC_8c2e7 
+CMakeFiles/cmTC_8c2e7.dir/CheckFunctionExists.c.o: In function `main':
+CheckFunctionExists.c:(.text+0x28): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_8c2e7.dir/build.make:99: cmTC_8c2e7] Error 1
+gmake[1]: Leaving directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_8c2e7/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_389b8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_389b8.dir/build.make CMakeFiles/cmTC_389b8.dir/build
+gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_389b8.dir/src.c.o
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc -DCMAKE_HAVE_LIBC_PTHREAD  -fPIE -o CMakeFiles/cmTC_389b8.dir/src.c.o -c /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_389b8
+/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_389b8.dir/link.txt --verbose=1
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc -rdynamic CMakeFiles/cmTC_389b8.dir/src.c.o -o cmTC_389b8 
+CMakeFiles/cmTC_389b8.dir/src.c.o: In function `main':
+src.c:(.text+0x64): undefined reference to `pthread_create'
+src.c:(.text+0x74): undefined reference to `pthread_detach'
+src.c:(.text+0x84): undefined reference to `pthread_cancel'
+src.c:(.text+0x98): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_389b8.dir/build.make:99: cmTC_389b8] Error 1
+gmake[1]: Leaving directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_389b8/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_03530/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_03530.dir/build.make CMakeFiles/cmTC_03530.dir/build
+gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_03530.dir/CheckFunctionExists.c.o
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE -o CMakeFiles/cmTC_03530.dir/CheckFunctionExists.c.o -c /autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_03530
+/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03530.dir/link.txt --verbose=1
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_03530.dir/CheckFunctionExists.c.o -o cmTC_03530  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_03530.dir/build.make:99: cmTC_03530] Error 1
+gmake[1]: Leaving directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:127: cmTC_03530/fast] Error 2
+
+
+

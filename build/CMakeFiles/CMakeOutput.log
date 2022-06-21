@@ -1,0 +1,1025 @@
+The system is: Linux - 4.18.0-193.46.1.el8_2.ppc64le - ppc64le
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/3.23.1/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /sw/summit/gcc/9.1.0-alpha+20190716/bin/g++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/3.23.1/CompilerIdCXX/a.out"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d1695/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d1695.dir/build.make CMakeFiles/cmTC_d1695.dir/build
+gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc   -v -o CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o -c /autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/share/cmake-3.23/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: powerpc64le-unknown-linux-gnu
+Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c,c++,fortran,lto --disable-multilib CFLAGS=-m64
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o' '-c'
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/cc1 -quiet -v -iprefix /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/ /autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/share/cmake-3.23/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o -version -o /tmp/cc9kjxBZ.s
+GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)
+	compiled by GNU C version 9.1.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "install/include"
+ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"
+ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include"
+ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed"
+ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include
+ /sw/summit/cuda/11.0.3/include
+ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include
+ /gpfs/alpine/scratch/umeshu/cfd144/occa/install/include
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed
+ /usr/local/include
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)
+	compiled by GNU C version 9.1.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: c31cf146f631521b07a8d8b08343904b
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o' '-c'
+ as -v -a64 -mppc64 -many -mlittle -o CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o /tmp/cc9kjxBZ.s
+GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-73.el8
+COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/
+LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o' '-c'
+Linking C executable cmTC_d1695
+/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1695.dir/link.txt --verbose=1
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc  -v -rdynamic CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o -o cmTC_d1695 
+Using built-in specs.
+COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc
+COLLECT_LTO_WRAPPER=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: powerpc64le-unknown-linux-gnu
+Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c,c++,fortran,lto --disable-multilib CFLAGS=-m64
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/
+LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d1695'
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/collect2 -plugin /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9kHBu0.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -V -m elf64lppc -export-dynamic -dynamic-linker /lib64/ld64.so.2 -o cmTC_d1695 /lib/../lib64/crt1.o /lib/../lib64/crti.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0 -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib -L/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o
+GNU ld version 2.30-73.el8
+  Supported emulations:
+   elf64lppc
+   elf32lppc
+   elf32lppclinux
+   elf32lppcsim
+   elf64ppc
+   elf32ppc
+   elf32ppclinux
+   elf32ppcsim
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d1695'
+gmake[1]: Leaving directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include]
+    add: [/sw/summit/cuda/11.0.3/include]
+    add: [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include]
+    add: [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/include]
+    add: [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include]
+    add: [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed]
+    add: [/usr/local/include]
+    add: [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include] ==> [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include]
+  collapse include dir [/sw/summit/cuda/11.0.3/include] ==> [/sw/summit/cuda/11.0.3/include]
+  collapse include dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include] ==> [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include]
+  collapse include dir [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/include] ==> [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/include]
+  collapse include dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include]
+  collapse include dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../include] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include;/sw/summit/cuda/11.0.3/include;/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include;/gpfs/alpine/scratch/umeshu/cfd144/occa/install/include;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed;/usr/local/include;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/include;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d1695/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d1695.dir/build.make CMakeFiles/cmTC_d1695.dir/build]
+  ignore line: [gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc   -v -o CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o -c /autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/share/cmake-3.23/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: powerpc64le-unknown-linux-gnu]
+  ignore line: [Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c c++ fortran lto --disable-multilib CFLAGS=-m64]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.1.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o' '-c']
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/cc1 -quiet -v -iprefix /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/ /autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/share/cmake-3.23/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -auxbase-strip CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o -version -o /tmp/cc9kjxBZ.s]
+  ignore line: [GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.1.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "install/include"]
+  ignore line: [ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include"]
+  ignore line: [ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include]
+  ignore line: [ /sw/summit/cuda/11.0.3/include]
+  ignore line: [ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include]
+  ignore line: [ /gpfs/alpine/scratch/umeshu/cfd144/occa/install/include]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.1.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: c31cf146f631521b07a8d8b08343904b]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o' '-c']
+  ignore line: [ as -v -a64 -mppc64 -many -mlittle -o CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o /tmp/cc9kjxBZ.s]
+  ignore line: [GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-73.el8]
+  ignore line: [COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o' '-c']
+  ignore line: [Linking C executable cmTC_d1695]
+  ignore line: [/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d1695.dir/link.txt --verbose=1]
+  ignore line: [/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc  -v -rdynamic CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o -o cmTC_d1695 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: powerpc64le-unknown-linux-gnu]
+  ignore line: [Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c c++ fortran lto --disable-multilib CFLAGS=-m64]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.1.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_d1695']
+  link line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/collect2 -plugin /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/cc9kHBu0.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -V -m elf64lppc -export-dynamic -dynamic-linker /lib64/ld64.so.2 -o cmTC_d1695 /lib/../lib64/crt1.o /lib/../lib64/crti.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0 -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib -L/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/cc9kHBu0.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-V] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf64lppc] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_d1695] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o] ==> obj [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o]
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0]
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc]
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib] ==> dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib]
+    arg [-L/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib] ==> dir [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib]
+    arg [-L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib] ==> dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib]
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../..] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../..]
+    arg [CMakeFiles/cmTC_d1695.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o] ==> obj [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o]
+  collapse obj [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib] ==> [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib]
+  collapse library dir [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib] ==> [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib]
+  collapse library dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib] ==> [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../..] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib64;/lib64;/usr/lib64;/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib;/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib;/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib]
+  implicit fwks: []
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a36f4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a36f4.dir/build.make CMakeFiles/cmTC_a36f4.dir/build
+gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++   -v -o CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o -c /autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: powerpc64le-unknown-linux-gnu
+Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c,c++,fortran,lto --disable-multilib CFLAGS=-m64
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/cc1plus -quiet -v -iprefix /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/ -D_GNU_SOURCE /autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -auxbase-strip CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cc6ZlyHa.s
+GNU C++14 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)
+	compiled by GNU C version 9.1.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "install/include"
+ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"
+ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0"
+ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/powerpc64le-unknown-linux-gnu"
+ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward"
+ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include"
+ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed"
+ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include
+ /sw/summit/cuda/11.0.3/include
+ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include
+ /gpfs/alpine/scratch/umeshu/cfd144/occa/install/include
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/powerpc64le-unknown-linux-gnu
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed
+ /usr/local/include
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+GNU C++14 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)
+	compiled by GNU C version 9.1.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 6b16c942bd0499042106b665dcdfa675
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'
+ as -v -a64 -mppc64 -many -mlittle -o CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc6ZlyHa.s
+GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-73.el8
+COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/
+LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc'
+Linking CXX executable cmTC_a36f4
+/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a36f4.dir/link.txt --verbose=1
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++  -v -rdynamic CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a36f4 
+Using built-in specs.
+COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++
+COLLECT_LTO_WRAPPER=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: powerpc64le-unknown-linux-gnu
+Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c,c++,fortran,lto --disable-multilib CFLAGS=-m64
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/
+LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a36f4' '-shared-libgcc'
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/collect2 -plugin /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM56Hog.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -V -m elf64lppc -export-dynamic -dynamic-linker /lib64/ld64.so.2 -o cmTC_a36f4 /lib/../lib64/crt1.o /lib/../lib64/crti.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0 -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib -L/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o
+GNU ld version 2.30-73.el8
+  Supported emulations:
+   elf64lppc
+   elf32lppc
+   elf32lppclinux
+   elf32lppcsim
+   elf64ppc
+   elf32ppc
+   elf32ppclinux
+   elf32ppcsim
+COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a36f4' '-shared-libgcc'
+gmake[1]: Leaving directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include]
+    add: [/sw/summit/cuda/11.0.3/include]
+    add: [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include]
+    add: [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/include]
+    add: [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0]
+    add: [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/powerpc64le-unknown-linux-gnu]
+    add: [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward]
+    add: [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include]
+    add: [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed]
+    add: [/usr/local/include]
+    add: [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../include]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include] ==> [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include]
+  collapse include dir [/sw/summit/cuda/11.0.3/include] ==> [/sw/summit/cuda/11.0.3/include]
+  collapse include dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include] ==> [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include]
+  collapse include dir [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/include] ==> [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/include]
+  collapse include dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/include/c++/9.1.0]
+  collapse include dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/powerpc64le-unknown-linux-gnu] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/include/c++/9.1.0/powerpc64le-unknown-linux-gnu]
+  collapse include dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/include/c++/9.1.0/backward]
+  collapse include dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include]
+  collapse include dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../include] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/include]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include;/sw/summit/cuda/11.0.3/include;/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include;/gpfs/alpine/scratch/umeshu/cfd144/occa/install/include;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/include/c++/9.1.0;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/include/c++/9.1.0/powerpc64le-unknown-linux-gnu;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/include/c++/9.1.0/backward;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed;/usr/local/include;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/include;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a36f4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a36f4.dir/build.make CMakeFiles/cmTC_a36f4.dir/build]
+  ignore line: [gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++   -v -o CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o -c /autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: powerpc64le-unknown-linux-gnu]
+  ignore line: [Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c c++ fortran lto --disable-multilib CFLAGS=-m64]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.1.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc']
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/cc1plus -quiet -v -iprefix /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/ -D_GNU_SOURCE /autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/share/cmake-3.23/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -auxbase-strip CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o -version -o /tmp/cc6ZlyHa.s]
+  ignore line: [GNU C++14 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.1.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "install/include"]
+  ignore line: [ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0"]
+  ignore line: [ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/powerpc64le-unknown-linux-gnu"]
+  ignore line: [ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward"]
+  ignore line: [ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include"]
+  ignore line: [ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include]
+  ignore line: [ /sw/summit/cuda/11.0.3/include]
+  ignore line: [ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include]
+  ignore line: [ /gpfs/alpine/scratch/umeshu/cfd144/occa/install/include]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/powerpc64le-unknown-linux-gnu]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.1.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 6b16c942bd0499042106b665dcdfa675]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc']
+  ignore line: [ as -v -a64 -mppc64 -many -mlittle -o CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o /tmp/cc6ZlyHa.s]
+  ignore line: [GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-73.el8]
+  ignore line: [COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc']
+  ignore line: [Linking CXX executable cmTC_a36f4]
+  ignore line: [/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a36f4.dir/link.txt --verbose=1]
+  ignore line: [/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++  -v -rdynamic CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_a36f4 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: powerpc64le-unknown-linux-gnu]
+  ignore line: [Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c c++ fortran lto --disable-multilib CFLAGS=-m64]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.1.0 (GCC) ]
+  ignore line: [COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-rdynamic' '-o' 'cmTC_a36f4' '-shared-libgcc']
+  link line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/collect2 -plugin /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccM56Hog.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -V -m elf64lppc -export-dynamic -dynamic-linker /lib64/ld64.so.2 -o cmTC_a36f4 /lib/../lib64/crt1.o /lib/../lib64/crti.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0 -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib -L/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o]
+    arg [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccM56Hog.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-V] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf64lppc] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_a36f4] ==> ignore
+    arg [/lib/../lib64/crt1.o] ==> obj [/lib/../lib64/crt1.o]
+    arg [/lib/../lib64/crti.o] ==> obj [/lib/../lib64/crti.o]
+    arg [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o] ==> obj [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o]
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0]
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc]
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib] ==> dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib]
+    arg [-L/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib] ==> dir [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib]
+    arg [-L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib] ==> dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib]
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../..] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../..]
+    arg [CMakeFiles/cmTC_a36f4.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o] ==> obj [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o]
+    arg [/lib/../lib64/crtn.o] ==> obj [/lib/../lib64/crtn.o]
+  collapse obj [/lib/../lib64/crt1.o] ==> [/lib64/crt1.o]
+  collapse obj [/lib/../lib64/crti.o] ==> [/lib64/crti.o]
+  collapse obj [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o]
+  collapse obj [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o]
+  collapse obj [/lib/../lib64/crtn.o] ==> [/lib64/crtn.o]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib] ==> [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib]
+  collapse library dir [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib] ==> [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib]
+  collapse library dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib] ==> [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../..] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/lib64/crt1.o;/lib64/crti.o;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o;/lib64/crtn.o]
+  implicit dirs: [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib64;/lib64;/usr/lib64;/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib;/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib;/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib]
+  implicit fwks: []
+
+
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_89711/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_89711.dir/build.make CMakeFiles/cmTC_89711.dir/build
+gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_89711.dir/CheckIncludeFile.c.o
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc   -fPIE -o CMakeFiles/cmTC_89711.dir/CheckIncludeFile.c.o -c /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_89711
+/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_89711.dir/link.txt --verbose=1
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc -rdynamic CMakeFiles/cmTC_89711.dir/CheckIncludeFile.c.o -o cmTC_89711 
+gmake[1]: Leaving directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function pthread_create exists in the pthread passed with the following output:
+Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9f1fb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9f1fb.dir/build.make CMakeFiles/cmTC_9f1fb.dir/build
+gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_9f1fb.dir/CheckFunctionExists.c.o
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc   -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE -o CMakeFiles/cmTC_9f1fb.dir/CheckFunctionExists.c.o -c /autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_9f1fb
+/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f1fb.dir/link.txt --verbose=1
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc  -DCHECK_FUNCTION_EXISTS=pthread_create -rdynamic CMakeFiles/cmTC_9f1fb.dir/CheckFunctionExists.c.o -o cmTC_9f1fb  -lpthread 
+gmake[1]: Leaving directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function sgemm_ exists passed with the following output:
+Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e6fed/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e6fed.dir/build.make CMakeFiles/cmTC_e6fed.dir/build
+gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e6fed.dir/CheckFunctionExists.c.o
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc   -DCHECK_FUNCTION_EXISTS=sgemm_ -fPIE -o CMakeFiles/cmTC_e6fed.dir/CheckFunctionExists.c.o -c /autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e6fed
+/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6fed.dir/link.txt --verbose=1
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc  -DCHECK_FUNCTION_EXISTS=sgemm_ -rdynamic CMakeFiles/cmTC_e6fed.dir/CheckFunctionExists.c.o -o cmTC_e6fed  /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/libopenblas.so 
+gmake[1]: Leaving directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function cheev_ exists passed with the following output:
+Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_92062/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_92062.dir/build.make CMakeFiles/cmTC_92062.dir/build
+gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_92062.dir/CheckFunctionExists.c.o
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc   -DCHECK_FUNCTION_EXISTS=cheev_ -fPIE -o CMakeFiles/cmTC_92062.dir/CheckFunctionExists.c.o -c /autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/share/cmake-3.23/Modules/CheckFunctionExists.c
+Linking C executable cmTC_92062
+/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_92062.dir/link.txt --verbose=1
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc  -DCHECK_FUNCTION_EXISTS=cheev_ -rdynamic CMakeFiles/cmTC_92062.dir/CheckFunctionExists.c.o -o cmTC_92062  /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/libopenblas.so -lpthread -lm -ldl 
+gmake[1]: Leaving directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+
+
+
+Detecting C OpenMP compiler ABI info compiled with the following output:
+Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e5613/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e5613.dir/build.make CMakeFiles/cmTC_e5613.dir/build
+gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc   -fopenmp -v -fPIE -o CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o -c /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c
+Using built-in specs.
+COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: powerpc64le-unknown-linux-gnu
+Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c,c++,fortran,lto --disable-multilib CFLAGS=-m64
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o' '-c' '-pthread'
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/cc1 -quiet -v -iprefix /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/ -D_REENTRANT /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -auxbase-strip CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o -version -fopenmp -fPIE -o /tmp/ccr5yxAa.s
+GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)
+	compiled by GNU C version 9.1.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "install/include"
+ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"
+ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include"
+ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed"
+ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include
+ /sw/summit/cuda/11.0.3/include
+ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include
+ /gpfs/alpine/scratch/umeshu/cfd144/occa/install/include
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed
+ /usr/local/include
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)
+	compiled by GNU C version 9.1.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: c31cf146f631521b07a8d8b08343904b
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o' '-c' '-pthread'
+ as -v -a64 -mppc64 -many -mlittle -o CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o /tmp/ccr5yxAa.s
+GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-73.el8
+COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/
+LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o' '-c' '-pthread'
+Linking C executable cmTC_e5613
+/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5613.dir/link.txt --verbose=1
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc  -fopenmp -v -rdynamic CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o -o cmTC_e5613  -v 
+Using built-in specs.
+COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc
+COLLECT_LTO_WRAPPER=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: powerpc64le-unknown-linux-gnu
+Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c,c++,fortran,lto --disable-multilib CFLAGS=-m64
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_e5613' '-v' '-pthread'
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/cc1 -fpreprocessed /tmp/ccxoM0Ob.c -quiet -dumpbase ccxoM0Ob.c -auxbase ccxoM0Ob -version -fopenmp -o /tmp/ccVUv2zB.s
+GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)
+	compiled by GNU C version 9.1.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)
+	compiled by GNU C version 9.1.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: c31cf146f631521b07a8d8b08343904b
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_e5613' '-v' '-pthread'
+ as -v -v -a64 -mppc64 -many -mlittle -o /tmp/ccz20Ll1.o /tmp/ccVUv2zB.s
+GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-73.el8
+COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/
+LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+Reading specs from /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/libgomp.spec
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_e5613' '-v' '-pthread'
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/collect2 -plugin /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccumzK7q.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -V -m elf64lppc -export-dynamic -dynamic-linker /lib64/ld64.so.2 -o cmTC_e5613 /lib/../lib64/crt1.o /lib/../lib64/crti.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtoffloadbegin.o -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0 -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib -L/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o /tmp/ccz20Ll1.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtoffloadend.o
+GNU ld version 2.30-73.el8
+  Supported emulations:
+   elf64lppc
+   elf32lppc
+   elf32lppclinux
+   elf32lppcsim
+   elf64ppc
+   elf32ppc
+   elf32ppclinux
+   elf32ppcsim
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_e5613' '-v' '-pthread'
+gmake[1]: Leaving directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C OpenMP implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e5613/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e5613.dir/build.make CMakeFiles/cmTC_e5613.dir/build]
+  ignore line: [gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o]
+  ignore line: [/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc   -fopenmp -v -fPIE -o CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o -c /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: powerpc64le-unknown-linux-gnu]
+  ignore line: [Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c c++ fortran lto --disable-multilib CFLAGS=-m64]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.1.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o' '-c' '-pthread']
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/cc1 -quiet -v -iprefix /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/ -D_REENTRANT /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.c -quiet -dumpbase OpenMPTryFlag.c -auxbase-strip CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o -version -fopenmp -fPIE -o /tmp/ccr5yxAa.s]
+  ignore line: [GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.1.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "install/include"]
+  ignore line: [ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include"]
+  ignore line: [ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include]
+  ignore line: [ /sw/summit/cuda/11.0.3/include]
+  ignore line: [ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include]
+  ignore line: [ /gpfs/alpine/scratch/umeshu/cfd144/occa/install/include]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.1.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: c31cf146f631521b07a8d8b08343904b]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o' '-c' '-pthread']
+  ignore line: [ as -v -a64 -mppc64 -many -mlittle -o CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o /tmp/ccr5yxAa.s]
+  ignore line: [GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-73.el8]
+  ignore line: [COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o' '-c' '-pthread']
+  ignore line: [Linking C executable cmTC_e5613]
+  ignore line: [/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e5613.dir/link.txt --verbose=1]
+  ignore line: [/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc  -fopenmp -v -rdynamic CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o -o cmTC_e5613  -v ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: powerpc64le-unknown-linux-gnu]
+  ignore line: [Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c c++ fortran lto --disable-multilib CFLAGS=-m64]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.1.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_e5613' '-v' '-pthread']
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/cc1 -fpreprocessed /tmp/ccxoM0Ob.c -quiet -dumpbase ccxoM0Ob.c -auxbase ccxoM0Ob -version -fopenmp -o /tmp/ccVUv2zB.s]
+  ignore line: [GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.1.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.1.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: c31cf146f631521b07a8d8b08343904b]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_e5613' '-v' '-pthread']
+  ignore line: [ as -v -v -a64 -mppc64 -many -mlittle -o /tmp/ccz20Ll1.o /tmp/ccVUv2zB.s]
+  ignore line: [GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-73.el8]
+  ignore line: [COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
+  ignore line: [Reading specs from /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/libgomp.spec]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_e5613' '-v' '-pthread']
+  link line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/collect2 -plugin /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccumzK7q.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --eh-frame-hdr -V -m elf64lppc -export-dynamic -dynamic-linker /lib64/ld64.so.2 -o cmTC_e5613 /lib/../lib64/crt1.o /lib/../lib64/crti.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtoffloadbegin.o -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0 -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib -L/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o /tmp/ccz20Ll1.o -lgomp -lgcc --as-needed -lgcc_s --no-as-needed -lpthread -lc -lgcc --as-needed -lgcc_s --no-as-needed /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtoffloadend.o]
+    arg [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccumzK7q.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-V] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf64lppc] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_e5613] ==> ignore
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0]
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc]
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib] ==> dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib]
+    arg [-L/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib] ==> dir [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib]
+    arg [-L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib] ==> dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib]
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../..] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../..]
+    arg [CMakeFiles/cmTC_e5613.dir/OpenMPTryFlag.c.o] ==> ignore
+    arg [-lgomp] ==> lib [gomp]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib] ==> [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib]
+  collapse library dir [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib] ==> [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib]
+  collapse library dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib] ==> [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../..] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib]
+  implicit libs: [gomp;gcc;gcc_s;pthread;c;gcc;gcc_s]
+  implicit objs: []
+  implicit dirs: [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib64;/lib64;/usr/lib64;/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib;/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib;/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib]
+  implicit fwks: []
+
+
+Detecting CXX OpenMP compiler ABI info compiled with the following output:
+Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9199c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9199c.dir/build.make CMakeFiles/cmTC_9199c.dir/build
+gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++   -fopenmp -v -fPIE -o CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o -c /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp
+Using built-in specs.
+COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: powerpc64le-unknown-linux-gnu
+Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c,c++,fortran,lto --disable-multilib CFLAGS=-m64
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread'
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/cc1plus -quiet -v -iprefix /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/ -D_GNU_SOURCE -D_REENTRANT /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -auxbase-strip CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o -version -fopenmp -fPIE -o /tmp/ccn27Wvp.s
+GNU C++14 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)
+	compiled by GNU C version 9.1.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "install/include"
+ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"
+ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0"
+ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/powerpc64le-unknown-linux-gnu"
+ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward"
+ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include"
+ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed"
+ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include
+ /sw/summit/cuda/11.0.3/include
+ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include
+ /gpfs/alpine/scratch/umeshu/cfd144/occa/install/include
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/powerpc64le-unknown-linux-gnu
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed
+ /usr/local/include
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../include
+ /usr/include
+End of search list.
+GNU C++14 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)
+	compiled by GNU C version 9.1.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 6b16c942bd0499042106b665dcdfa675
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread'
+ as -v -a64 -mppc64 -many -mlittle -o CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o /tmp/ccn27Wvp.s
+GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-73.el8
+COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/
+LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread'
+Linking CXX executable cmTC_9199c
+/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9199c.dir/link.txt --verbose=1
+/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++  -fopenmp -v -rdynamic CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o -o cmTC_9199c  -v 
+Using built-in specs.
+COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++
+COLLECT_LTO_WRAPPER=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none
+Target: powerpc64le-unknown-linux-gnu
+Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c,c++,fortran,lto --disable-multilib CFLAGS=-m64
+Thread model: posix
+gcc version 9.1.0 (GCC) 
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_9199c' '-v' '-shared-libgcc' '-pthread'
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/cc1 -fpreprocessed /tmp/ccwm9p6p.c -quiet -dumpbase ccwm9p6p.c -auxbase ccwm9p6p -version -fopenmp -o /tmp/cc94DgYP.s
+GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)
+	compiled by GNU C version 9.1.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)
+	compiled by GNU C version 9.1.0, GMP version 6.1.0, MPFR version 3.1.4, MPC version 1.0.3, isl version isl-0.18-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: c31cf146f631521b07a8d8b08343904b
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_9199c' '-v' '-shared-libgcc' '-pthread'
+ as -v -v -a64 -mppc64 -many -mlittle -o /tmp/cc97RDQf.o /tmp/cc94DgYP.s
+GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-73.el8
+COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/
+LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/
+Reading specs from /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/libgomp.spec
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_9199c' '-v' '-shared-libgcc' '-pthread'
+ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/collect2 -plugin /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJBIoJF.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -V -m elf64lppc -export-dynamic -dynamic-linker /lib64/ld64.so.2 -o cmTC_9199c /lib/../lib64/crt1.o /lib/../lib64/crti.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtoffloadbegin.o -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0 -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib -L/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm /tmp/cc97RDQf.o -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtoffloadend.o
+GNU ld version 2.30-73.el8
+  Supported emulations:
+   elf64lppc
+   elf32lppc
+   elf32lppclinux
+   elf32lppcsim
+   elf64ppc
+   elf32ppc
+   elf32ppclinux
+   elf32ppcsim
+COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_9199c' '-v' '-shared-libgcc' '-pthread'
+gmake[1]: Leaving directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX OpenMP implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9199c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9199c.dir/build.make CMakeFiles/cmTC_9199c.dir/build]
+  ignore line: [gmake[1]: Entering directory '/gpfs/alpine/cfd144/scratch/umeshu/forks/cmake-libp/cns-bench/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o]
+  ignore line: [/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++   -fopenmp -v -fPIE -o CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o -c /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: powerpc64le-unknown-linux-gnu]
+  ignore line: [Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c c++ fortran lto --disable-multilib CFLAGS=-m64]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.1.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread']
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/cc1plus -quiet -v -iprefix /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/ -D_GNU_SOURCE -D_REENTRANT /gpfs/alpine/scratch/umeshu/cfd144/forks/cmake-libp/cns-bench/build/CMakeFiles/FindOpenMP/OpenMPTryFlag.cpp -quiet -dumpbase OpenMPTryFlag.cpp -auxbase-strip CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o -version -fopenmp -fPIE -o /tmp/ccn27Wvp.s]
+  ignore line: [GNU C++14 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.1.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "install/include"]
+  ignore line: [ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"]
+  ignore line: [ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0"]
+  ignore line: [ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/powerpc64le-unknown-linux-gnu"]
+  ignore line: [ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward"]
+  ignore line: [ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include"]
+  ignore line: [ignoring duplicate directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../powerpc64le-unknown-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/include]
+  ignore line: [ /sw/summit/cuda/11.0.3/include]
+  ignore line: [ /sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/include]
+  ignore line: [ /gpfs/alpine/scratch/umeshu/cfd144/occa/install/include]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/powerpc64le-unknown-linux-gnu]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../include/c++/9.1.0/backward]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/include-fixed]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/../../include]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++14 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.1.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 6b16c942bd0499042106b665dcdfa675]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread']
+  ignore line: [ as -v -a64 -mppc64 -many -mlittle -o CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o /tmp/ccn27Wvp.s]
+  ignore line: [GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-73.el8]
+  ignore line: [COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-fPIE' '-o' 'CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o' '-c' '-shared-libgcc' '-pthread']
+  ignore line: [Linking CXX executable cmTC_9199c]
+  ignore line: [/autofs/nccs-svm1_sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-8.3.1/cmake-3.23.1-ij35dzv4x2ql3uxn2n63ei4qr2uutjtu/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9199c.dir/link.txt --verbose=1]
+  ignore line: [/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++  -fopenmp -v -rdynamic CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o -o cmTC_9199c  -v ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/sw/summit/gcc/9.1.0-alpha+20190716/bin/g++]
+  ignore line: [COLLECT_LTO_WRAPPER=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
+  ignore line: [Target: powerpc64le-unknown-linux-gnu]
+  ignore line: [Configured with: /tmp/belhorn/gcc-build-9.1.0-alpha+20190716/gcc-9.1.0/configure --prefix=/sw/summit/gcc/9.1.0-alpha+20190716 --enable-offload-targets=nvptx-none --with-cuda-driver-include=/sw/summit/cuda/10.1.168/include --with-cuda-driver-lib=/sw/summit/cuda/10.1.168/lib64 --with-cuda-driver=/sw/summit/cuda/10.1.168 --enable-languages=c c++ fortran lto --disable-multilib CFLAGS=-m64]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 9.1.0 (GCC) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_9199c' '-v' '-shared-libgcc' '-pthread']
+  ignore line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/cc1 -fpreprocessed /tmp/ccwm9p6p.c -quiet -dumpbase ccwm9p6p.c -auxbase ccwm9p6p -version -fopenmp -o /tmp/cc94DgYP.s]
+  ignore line: [GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.1.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [GNU C17 (GCC) version 9.1.0 (powerpc64le-unknown-linux-gnu)]
+  ignore line: [	compiled by GNU C version 9.1.0  GMP version 6.1.0  MPFR version 3.1.4  MPC version 1.0.3  isl version isl-0.18-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: c31cf146f631521b07a8d8b08343904b]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_9199c' '-v' '-shared-libgcc' '-pthread']
+  ignore line: [ as -v -v -a64 -mppc64 -many -mlittle -o /tmp/cc97RDQf.o /tmp/cc94DgYP.s]
+  ignore line: [GNU assembler version 2.30 (ppc64le-redhat-linux) using BFD version version 2.30-73.el8]
+  ignore line: [COMPILER_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/]
+  ignore line: [LIBRARY_PATH=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib/:/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib/:/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib/:/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../:/lib/:/usr/lib/]
+  ignore line: [Reading specs from /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64/libgomp.spec]
+  ignore line: [COLLECT_GCC_OPTIONS='-fopenmp' '-v' '-rdynamic' '-o' 'cmTC_9199c' '-v' '-shared-libgcc' '-pthread']
+  link line: [ /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/collect2 -plugin /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/liblto_plugin.so -plugin-opt=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper -plugin-opt=-fresolution=/tmp/ccJBIoJF.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lpthread -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --eh-frame-hdr -V -m elf64lppc -export-dynamic -dynamic-linker /lib64/ld64.so.2 -o cmTC_9199c /lib/../lib64/crt1.o /lib/../lib64/crti.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtbegin.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtoffloadbegin.o -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0 -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib -L/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib -L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib -L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../.. CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o -lstdc++ -lm /tmp/cc97RDQf.o -lgomp -lgcc_s -lgcc -lpthread -lc -lgcc_s -lgcc /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtend.o /lib/../lib64/crtn.o /autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/crtoffloadend.o]
+    arg [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../libexec/gcc/powerpc64le-unknown-linux-gnu/9.1.0/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccJBIoJF.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lpthread] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-V] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf64lppc] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_9199c] ==> ignore
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0]
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc]
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib] ==> dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib]
+    arg [-L/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib] ==> dir [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib]
+    arg [-L/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib] ==> dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib]
+    arg [-L/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../..] ==> dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../..]
+    arg [CMakeFiles/cmTC_9199c.dir/OpenMPTryFlag.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgomp] ==> lib [gomp]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lpthread] ==> lib [pthread]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../../../lib64] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib] ==> [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib]
+  collapse library dir [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib] ==> [/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib]
+  collapse library dir [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib] ==> [/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib]
+  collapse library dir [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/bin/../lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0/../../..] ==> [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib]
+  implicit libs: [stdc++;m;gomp;gcc_s;gcc;pthread;c;gcc_s;gcc]
+  implicit objs: []
+  implicit dirs: [/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc/powerpc64le-unknown-linux-gnu/9.1.0;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib/gcc;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib64;/lib64;/usr/lib64;/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/openblas-0.3.17-ehvho6jt4ooly45nfunnwqq3kp476x5h/lib;/gpfs/alpine/scratch/umeshu/cfd144/occa/install/lib;/sw/summit/spack-envs/base/opt/linux-rhel8-ppc64le/gcc-9.1.0/spectrum-mpi-10.4.0.3-20210112-6jbupg3thjwhsabgevk6xmwhd2bbyxdc/lib;/autofs/nccs-svm1_sw/summit/gcc/9.1.0-alpha+20190716/lib]
+  implicit fwks: []
+
+
