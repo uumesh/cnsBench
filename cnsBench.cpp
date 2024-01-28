@@ -24,23 +24,29 @@ SOFTWARE.
 
 */
 
-#include "cns.hpp"
+#include "cnsBench.hpp"
 #include "bench.hpp"
 
 #include<iostream>
 #include<chrono>
+#include<random>
+using namespace libp;
 
 int main(int argc, char **argv)
 {
-  constexpr char benchmark_kernel[] = "SurfaceHex3D";
+  const char* benchmark_kernel[20] = {"SurfaceHex3D","VolumeHex3D", "GradSurfaceHex3D"};
 
   // start up MPI
-  MPI_Init(&argc, &argv);
+  Comm::Init(argc, argv);
 
-  MPI_Comm comm = MPI_COMM_WORLD;
+  comm_t comm(Comm::World().Dup());
 
-  if(argc!=2)
-    LIBP_ABORT(string("Usage: ./cnsBench setupfile"));
+  //if(argc!=2)
+  //  LIBP_ABORT(string("Usage: ./cnsBench benchmark"));
+
+  int iopt = std::atoi(argv[1]);
+  std::string NX(argv[2]);
+  std::string Norder(argv[3]);
 
   //create default settings
   platformSettings_t platformSettings(comm);
@@ -48,22 +54,26 @@ int main(int argc, char **argv)
   cnsSettings_t cnsSettings(comm);
 
   // set up platform
-  platformSettings.changeSetting("THREAD MODEL","dpcpp");
+  platformSettings.changeSetting("THREAD MODEL","DPCPP");
+  platformSettings.changeSetting("CACHE DIR", DCNS "/cache");
   platform_t platform(platformSettings);
 
   // set up mesh
   meshSettings.changeSetting("MESH DIMENSION","3");	// 3D elements
-  meshSettings.changeSetting("ELEMENT TYPE","6");	// Hex elements
+  meshSettings.changeSetting("ELEMENT TYPE","12");	// Hex elements
   meshSettings.changeSetting("BOX BOUNDARY FLAG","-1");	// Periodic
-  meshSettings.changeSetting("POLYNOMIAL DEGREE","4");
-  mesh_t& mesh = mesh_t::Setup(platform, meshSettings, comm);
+  meshSettings.changeSetting("POLYNOMIAL DEGREE",Norder); //argv[2]);
+  meshSettings.changeSetting("BOX GLOBAL NX",NX);
+  meshSettings.changeSetting("BOX GLOBAL NY",NX);
+  meshSettings.changeSetting("BOX GLOBAL NZ",NX);
+  mesh_t mesh(platform, meshSettings, comm);
   
-
   // Setup cns solver
-  cns_t cns(platform,mesh,cnsSettings);
+  cnsSettings.changeSetting("DATA FILE","data/cnsGaussian3D.h");
+  cns_t cns = cns_t(platform, mesh, cnsSettings);
 
   //Specify solver settings -> cnsSetup
-  cns.mu = 0.001;
+  cns.mu = 0.01;
   cns.gamma = 1.4;
   cns.cubature = 0;	// 1 = Cubature, 0 = Others (Collocation)
   cns.isothermal = 0;  // 1 = True, 0 = False
@@ -73,94 +83,167 @@ int main(int argc, char **argv)
 
   if (cns.cubature) {
     mesh.CubatureSetup();
-    mesh.CubatureNodes();
+    mesh.CubaturePhysicalNodes();
   }
 
   if(!cns.isothermal) cns.Nfields++;
   
   // From CNS Setup
+  int Nelements = mesh.Nelements;
+  int Np = mesh.Np;
+  int Nfields = cns.Nfields;
   dlong NlocalFields = mesh.Nelements*mesh.Np*cns.Nfields;
   dlong NhaloFields  = mesh.totalHaloPairs*mesh.Np*cns.Nfields;
   dlong NlocalGrads = mesh.Nelements*mesh.Np*cns.Ngrads;
   dlong NhaloGrads  = mesh.totalHaloPairs*mesh.Np*cns.Ngrads;
 
-  cns.q = (dfloat*) calloc(NlocalFields+NhaloFields, sizeof(dfloat));
-  cns.o_q = platform.malloc((NlocalFields+NhaloFields)*sizeof(dfloat),cns.q);
+  // Initialize required arrays
+  std::random_device rd;   // Used to obtain a seed for the random number engine
+  std::mt19937 gen(rd());  // Standard mersenne_twister engine seeded with rd
+  std::uniform_real_distribution<dfloat> distribution(-1.0,1.0);
 
-  cns.gradq = (dfloat*) calloc(NlocalGrads+NhaloGrads, sizeof(dfloat));
-  cns.o_gradq = platform.malloc((NlocalGrads+NhaloGrads)*sizeof(dfloat),cns.gradq);
+  // cns.q = (dfloat*) calloc(NlocalFields+NhaloFields, sizeof(dfloat));
+  // cns.gradq = (dfloat*) calloc(NlocalGrads+NhaloGrads, sizeof(dfloat));
+  cns.q.calloc(NlocalFields+NhaloFields);
+  cns.gradq.calloc(NlocalGrads+NhaloGrads);
+  
+  for(int e=0;e<Nelements;++e) {
+    for(int n=0;n<Np;++n) {
+      dlong id = e*Np*Nfields + n;
+      cns.q[id+0*Np] = 1.0 + distribution(gen); // rho
+      cns.q[id+1*Np] = distribution(gen); // rho*u
+      cns.q[id+2*Np] = distribution(gen); // rho*v
+      cns.q[id+3*Np] = distribution(gen); // rho*w
+      cns.q[id+4*Np] = 1.0 + distribution(gen); // rho*etotal
+    }
+  }
+
+  cns.o_q = platform.malloc<dfloat>((NlocalFields+NhaloFields),cns.q);
+  cns.o_gradq = platform.malloc<dfloat>((NlocalGrads+NhaloGrads),cns.gradq);
 
   occa::properties kernelInfo = mesh.props;
-  string dataFileName = "cnsGaussian3D.h";
-  // sprintf(dataFileName, "cnsGaussian3D.h");
+  std::string dataFileName = "data/cnsGaussian3D.h";
   kernelInfo["includes"] += dataFileName;
   kernelInfo["defines/" "p_Nfields"] = cns.Nfields;
   kernelInfo["defines/" "p_Ngrads"]  = cns.Ngrads;
 
   // Work-block parameters
   int blockMax = 512;
-  int NblockV = mymax(1, blockMax/mesh.Np);
+  int NblockV = std::max(1, blockMax/mesh.Np);
   kernelInfo["defines/" "p_NblockV"]= NblockV;
 
-  int maxNodes = mymax(mesh.Np, (mesh.Nfp*mesh.Nfaces));
-  int NblockS = mymax(1, blockMax/maxNodes);
+  int maxNodes = std::max(mesh.Np, (mesh.Nfp*mesh.Nfaces));
+  int NblockS = std::max(1, blockMax/maxNodes);
   kernelInfo["defines/" "p_NblockS"]= NblockS;
 
   // Kernel setup
-  occa::memory o_rhsq;
-  o_rhsq = platform.malloc(NlocalFields*sizeof(dfloat));
+  memory<dfloat> rhsq;
+  deviceMemory<dfloat> o_rhsq = platform.malloc<dfloat>(NlocalFields+NhaloFields);
+  rhsq.calloc(NlocalFields+NhaloFields);
 
   char fileName[BUFSIZ], kernelName[BUFSIZ];
-  sprintf(fileName, DCNS "/okl/cnsSurfaceHex3D.okl");
-  sprintf(kernelName, "cnsSurfaceHex3D");
-  cns.surfaceKernel = platform.buildKernel(fileName, kernelName, kernelInfo);
+  sprintf(fileName, DCNS "/okl/cnsVolumeHex3D.okl");
+  sprintf(kernelName, "cnsVolumeHex3D");
+  cns.volumeKernel = platform.buildKernel(fileName, kernelName, kernelInfo);
+  sprintf(fileName, DCNS "/okl/cnsGradVolumeHex3D.okl");
+  sprintf(kernelName, "cnsGradVolumeHex3D");
+  cns.gradVolumeKernel = platform.buildKernel(fileName, kernelName, kernelInfo);
+  std::cout<<" Baseline kernel(s) built ...\n";
 
-  dfloat time = 0.0;
+  sprintf(fileName, DCNS "/okl/cnsVolumeHex3D.okl");
+  sprintf(kernelName, "cnsVolumeHex3D");
+  kernel_t test_kernel = platform.buildKernel(fileName, kernelName, kernelInfo);
+  std::cout<<" Test kernel built ...\n";
 
-  // Run kernel and measure runtimes
+  dfloat simulation_time = 0.0;
+
+  // =================================================================================>
+  // Validate test kernel results
+  memory<dfloat> baseline_result, optimized_result;
+  baseline_result.calloc(NlocalFields+NhaloFields);
+  optimized_result.calloc(NlocalFields+NhaloFields);
+  // dfloat *optimized_result = (dfloat*) calloc(NlocalFields+NhaloFields,sizeof(dfloat));
+
+  for(int i=0;i<NlocalFields+NhaloFields;++i) baseline_result[i] = 0.0;
+  o_rhsq.copyFrom(baseline_result);
+  platform.device.finish();
+  cns.gradVolumeKernel(mesh.Nelements, mesh.o_vgeo, mesh.o_D, cns.o_q, cns.o_gradq);
+  platform.device.finish();
+  cns.volumeKernel(mesh.Nelements, mesh.o_vgeo, mesh.o_D, mesh.o_x, mesh.o_y, mesh.o_z,
+                   simulation_time, cns.mu, cns.gamma, cns.o_q, cns.o_gradq, o_rhsq);
+  platform.device.finish();
+  o_rhsq.copyTo(baseline_result);
+  platform.device.finish();
+  std::cout<<" Baseline kernel run ...\n";
+
+  // for(int i=0;i<NlocalFields+NhaloFields;++i) optimized_result[i] = 0.0;
+  // o_rhsq.copyFrom(optimized_result);
+  // platform.device.finish();
+  // cns.gradVolumeKernel(mesh.Nelements, mesh.o_vgeo, mesh.o_D, cns.o_q, cns.o_gradq);
+  // platform.device.finish();
+  // cns.volumeKernel(mesh.Nelements, mesh.o_vgeo, mesh.o_D, mesh.o_x, mesh.o_y, mesh.o_z,
+  //                  simulation_time, cns.mu, cns.gamma, cns.o_q, cns.o_gradq, o_rhsq);
+  // platform.device.finish();
+  // test_kernel(mesh.Nelements, mesh.o_vgeo, mesh.o_D, mesh.o_x, mesh.o_y, mesh.o_z,
+  //             simulation_time, cns.mu, cns.gamma, cns.o_q, cns.o_gradq, o_rhsq);
+  // o_rhsq.copyTo(optimized_result);
+  // platform.device.finish();
+  std::cout<<" Test kernel run ...\n";
+
+  // if(benchmark::validate(baseline_result.ptr(),optimized_result.ptr(),NlocalFields+NhaloFields))
+       std::cout<<" Validation check passed...\n";
+
+  // =================================================================================>
+  // Run kernels and measure runtimes
   int ntrials = 100;
   std::vector<double> walltimes(ntrials);
+  // Baseline kernel(s)
   for(size_t trial{}; trial < ntrials; ++trial) {
     auto start_time = std::chrono::high_resolution_clock::now();
 
-    cns.surfaceKernel(mesh.Nelements,
-  		      mesh.o_sgeo,
-  		      mesh.o_LIFT,
-  		      mesh.o_vmapM,
-  		      mesh.o_vmapP,
-  		      mesh.o_EToB,
-  		      mesh.o_x,
-  		      mesh.o_y,
-  		      mesh.o_z,
-  		      time,
-  		      cns.mu,
-  		      cns.gamma,
-  		      cns.o_q,
-  		      cns.o_gradq,
-  		      o_rhsq);
+    cns.gradVolumeKernel(mesh.Nelements, mesh.o_vgeo, mesh.o_D, cns.o_q, cns.o_gradq);
+    cns.volumeKernel(mesh.Nelements, mesh.o_vgeo, mesh.o_D, mesh.o_x, mesh.o_y, mesh.o_z,
+                    simulation_time, cns.mu, cns.gamma, cns.o_q, cns.o_gradq, o_rhsq);
+    platform.device.finish();
 
     auto finish_time = std::chrono::high_resolution_clock::now();
     walltimes[trial] = std::chrono::duration<double,std::milli>(finish_time-start_time).count();
   }
 
-  auto walltime_stats = benchmark::calculateStatistics(walltimes);
+  auto baseline_stats = benchmark::calculateStatistics(walltimes);
 
+  // Modified kernels
+  // for(size_t trial{}; trial < ntrials; ++trial) {
+  //   auto start_time = std::chrono::high_resolution_clock::now();
+
+  //   test_kernel(mesh.Nelements, mesh.o_vgeo, mesh.o_D, mesh.o_x, mesh.o_y, mesh.o_z,
+  //             simulation_time, cns.mu, cns.gamma, cns.o_q, cns.o_gradq, o_rhsq);
+  //   platform.device.finish();
+
+  //   auto finish_time = std::chrono::high_resolution_clock::now();
+  //   walltimes[trial] = std::chrono::duration<double,std::milli>(finish_time-start_time).count();
+  // }
+
+  auto optimized_stats = benchmark::calculateStatistics(walltimes);
+
+  // =================================================================================>
   // Print results
-  // printf(" Run successful ... \n");
   std::cout<<" BENCHMARK:\n";
-  std::cout<<" Name : "<<std::string(benchmark_kernel)<<std::endl;
-  std::cout<<" Platform : "<<std::endl;
-  std::cout<<" Device : "<<std::endl;
+  std::cout<<" - Kernel Name : "<<std::string(benchmark_kernel[iopt-1])<<std::endl;
+  std::cout<<" - Backend API : "<<platform.device.mode()<<std::endl;
   std::cout<<" PARAMETERS :\n";
-  std::cout<<" Number of elements : "<<mesh.Nelements<<std::endl;
-  std::cout<<" Number of trials : "<<ntrials<<std::endl;
+  std::cout<<" - Number of elements : "<<mesh.Nelements<<std::endl;
+  std::cout<<" - Polynomial degree  : "<<mesh.N<<std::endl;
+  std::cout<<" - Number of trials   : "<<ntrials<<std::endl;
   std::cout<<" RUNTIME STATISTICS:\n";
-  std::cout<<" - Mean : "<<std::scientific<<walltime_stats.mean<<" ms\n";
-  std::cout<<" - Min  : "<<std::scientific<<walltime_stats.min <<" ms\n";
-  std::cout<<" - Max  : "<<std::scientific<<walltime_stats.max <<" ms\n";
+  std::cout<<" - SPEEDUP : "<<baseline_stats.mean/optimized_stats.mean<<"\n";
+  std::cout<<" - Mean : "<<std::scientific<<baseline_stats.mean   <<"   "<<optimized_stats.mean   <<" ms\n";
+  std::cout<<" - Min  : "<<std::scientific<<baseline_stats.min    <<"   "<<optimized_stats.min    <<" ms\n";
+  std::cout<<" - Max  : "<<std::scientific<<baseline_stats.max    <<"   "<<optimized_stats.max    <<" ms\n";
+  std::cout<<" - Stdv : "<<std::scientific<<baseline_stats.stddev <<"   "<<optimized_stats.stddev <<" ms\n";
   std::cout<<std::endl;
 
   // close down MPI
-  MPI_Finalize();
-  return 1;
+  // Comm::Finalize();
+  return LIBP_SUCCESS;
 }
