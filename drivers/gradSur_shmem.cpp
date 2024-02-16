@@ -156,11 +156,11 @@ int main(int argc, char **argv)
 
   // =================================================================================>
   // Validate test kernel results
-  memory<dfloat> baseline_result, optimized_result;
+  memory<dfloat> baseline_result, modified_result;
   baseline_result.calloc(NlocalGrads+NhaloGrads);
-  optimized_result.calloc(NlocalGrads+NhaloGrads);
+  modified_result.calloc(NlocalGrads+NhaloGrads);
 
-  for(int i=0;i<NlocalFields+NhaloFields;++i) baseline_result[i] = 0.0;
+  for(int i=0;i<NlocalGrads+NhaloGrads;++i) baseline_result[i] = 0.0;
   cns.o_gradq.copyFrom(baseline_result);
   platform.device.finish();
   cns.gradSurfaceKernel(mesh.Nelements, mesh.o_sgeo, mesh.o_LIFT,	mesh.o_vmapM,	mesh.o_vmapP,	mesh.o_EToB,
@@ -170,16 +170,16 @@ int main(int argc, char **argv)
   platform.device.finish();
   std::cout<<" Baseline kernel run ...\n";
 
-  for(int i=0;i<NlocalFields+NhaloFields;++i) optimized_result[i] = 0.0;
-  o_gradq_test.copyFrom(optimized_result);
+  for(int i=0;i<NlocalGrads+NhaloGrads;++i) optimized_result[i] = 0.0;
+  o_gradq_test.copyFrom(modified_result);
   platform.device.finish();
   test_kernel(mesh.Nelements, mesh.o_sgeo, mesh.o_LIFT,	mesh.o_vmapM,	mesh.o_vmapP,	mesh.o_EToB,
 			        mesh.o_x,	mesh.o_y,	mesh.o_z,	simulation_time, cns.mu, cns.gamma,	cns.o_q, o_gradq_test);;
-  o_gradq_test.copyTo(optimized_result);
+  o_gradq_test.copyTo(modified_result);
   platform.device.finish();
   std::cout<<" Test kernel run ...\n";
 
-  if(benchmark::validate(baseline_result.ptr(),optimized_result.ptr(),NlocalFields+NhaloFields))
+  if(benchmark::validate(baseline_result.ptr(),optimized_result.ptr(),NlocalGrads+NhaloGrads))
        std::cout<<" Validation check passed...\n";
 
   // =================================================================================>
