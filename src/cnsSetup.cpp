@@ -196,14 +196,14 @@ void cns_t::Setup(platform_t& _platform, mesh_t& _mesh,
       fileName   = oklFilePrefix + "cnsVolume" + suffix + oklFileSuffix;
       kernelName = "cnsVolume" + suffix;
 
-      volumeKernel =  platform.buildKernel(fileName, kernelName,
-                                             kernelInfo);
+      // volumeKernel =  platform.buildKernel(fileName, kernelName,
+                                            //  kernelInfo);
       // kernels from surface file
       fileName   = oklFilePrefix + "cnsSurface" + suffix + oklFileSuffix;
       kernelName = "cnsSurface" + suffix;
 
-      surfaceKernel = platform.buildKernel(fileName, kernelName,
-                                             kernelInfo);
+      // surfaceKernel = platform.buildKernel(fileName, kernelName,
+                                            //  kernelInfo);
     }
   }
 
@@ -211,14 +211,14 @@ void cns_t::Setup(platform_t& _platform, mesh_t& _mesh,
   fileName   = oklFilePrefix + "cnsGradVolume" + suffix + oklFileSuffix;
   kernelName = "cnsGradVolume" + suffix;
 
-  gradVolumeKernel =  platform.buildKernel(fileName, kernelName,
-                                           kernelInfo);
+  // gradVolumeKernel =  platform.buildKernel(fileName, kernelName,
+                                          //  kernelInfo);
   // kernels from surface file
   fileName   = oklFilePrefix + "cnsGradSurface" + suffix + oklFileSuffix;
   kernelName = "cnsGradSurface" + suffix;
 
-  gradSurfaceKernel = platform.buildKernel(fileName, kernelName,
-                                           kernelInfo);
+  // gradSurfaceKernel = platform.buildKernel(fileName, kernelName,
+                                          //  kernelInfo);
 
   // vorticity calculation
   fileName   = oklFilePrefix + "cnsVorticity" + suffix + oklFileSuffix;
