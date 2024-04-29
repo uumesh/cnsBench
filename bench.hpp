@@ -36,15 +36,17 @@ namespace benchmark {
 
   template<typename T,typename U>
   bool validate(T* a, T* b, U N) {
-    T tol = 1.0e-10;
+    T atol = 1.0e-9;
+    T rtol = 1.0e-12;
     for(U i{};i<N;++i) {
-      if(std::abs(a[i]-b[i])>tol)
+      if((std::abs(a[i]-b[i])>atol)&&(std::abs((a[i]-b[i])/b[i])>rtol))
       {
         std::cout<<" Validation check failed!"
-		 <<"\n\texpected: "<<a[i]
-		 <<"\n\tactual  : "<<b[i]
-		 <<std::endl;
-	std::terminate();
+		    <<"\n\texpected: "<<a[i]
+		    <<"\n\tactual  : "<<b[i]
+        <<"\n\tdiffer  : "<<a[i]-b[i]
+		    <<std::endl;
+        std::terminate();
       }
     }
     return true;

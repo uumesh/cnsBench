@@ -61,19 +61,19 @@ void cns_t::Setup(platform_t& _platform, mesh_t& _mesh,
   dlong NhaloGrads  = mesh.totalHaloPairs*mesh.Np*Ngrads;
 
   //setup timeStepper
-  if (settings.compareSetting("TIME INTEGRATOR","AB3")){
-    timeStepper.Setup<TimeStepper::ab3>(mesh.Nelements,
-                                        mesh.totalHaloPairs,
-                                        mesh.Np, Nfields, platform, comm);
-  } else if (settings.compareSetting("TIME INTEGRATOR","LSERK4")){
-    timeStepper.Setup<TimeStepper::lserk4>(mesh.Nelements,
-                                           mesh.totalHaloPairs,
-                                           mesh.Np, Nfields, platform, comm);
-  } else if (settings.compareSetting("TIME INTEGRATOR","DOPRI5")){
-    timeStepper.Setup<TimeStepper::dopri5>(mesh.Nelements,
-                                           mesh.totalHaloPairs,
-                                           mesh.Np, Nfields, platform, comm);
-  }
+  // if (settings.compareSetting("TIME INTEGRATOR","AB3")){
+  //   timeStepper.Setup<TimeStepper::ab3>(mesh.Nelements,
+  //                                       mesh.totalHaloPairs,
+  //                                       mesh.Np, Nfields, platform, comm);
+  // } else if (settings.compareSetting("TIME INTEGRATOR","LSERK4")){
+  //   timeStepper.Setup<TimeStepper::lserk4>(mesh.Nelements,
+  //                                          mesh.totalHaloPairs,
+  //                                          mesh.Np, Nfields, platform, comm);
+  // } else if (settings.compareSetting("TIME INTEGRATOR","DOPRI5")){
+  //   timeStepper.Setup<TimeStepper::dopri5>(mesh.Nelements,
+  //                                          mesh.totalHaloPairs,
+  //                                          mesh.Np, Nfields, platform, comm);
+  // }
 
   //setup linear algebra module
   platform.linAlg().InitKernels({"innerProd", "max"});
@@ -241,8 +241,8 @@ void cns_t::Setup(platform_t& _platform, mesh_t& _mesh,
       kernelName = "cnsInitialCondition3D";
   }
 
-  initialConditionKernel = platform.buildKernel(fileName, kernelName,
-                                            kernelInfo);
+  // initialConditionKernel = platform.buildKernel(fileName, kernelName,
+                                            // kernelInfo);
 
   fileName   = oklFilePrefix + "cnsMaxWaveSpeed" + suffix + oklFileSuffix;
   if (isothermal) {
@@ -251,6 +251,6 @@ void cns_t::Setup(platform_t& _platform, mesh_t& _mesh,
     kernelName = "cnsMaxWaveSpeed" + suffix;
   }
 
-  maxWaveSpeedKernel = platform.buildKernel(fileName, kernelName,
-                                            kernelInfo);
+  // maxWaveSpeedKernel = platform.buildKernel(fileName, kernelName,
+                                            // kernelInfo);
 }
