@@ -170,7 +170,7 @@ int main(int argc, char **argv)
   platform.device.finish();
   std::cout<<" Baseline kernel run ...\n";
 
-  for(int i=0;i<NlocalGrads+NhaloGrads;++i) optimized_result[i] = 0.0;
+  for(int i=0;i<NlocalGrads+NhaloGrads;++i) modified_result[i] = 0.0;
   o_gradq_test.copyFrom(modified_result);
   platform.device.finish();
   test_kernel(mesh.Nelements, mesh.o_sgeo, mesh.o_LIFT,	mesh.o_vmapM,	mesh.o_vmapP,	mesh.o_EToB,
@@ -179,7 +179,7 @@ int main(int argc, char **argv)
   platform.device.finish();
   std::cout<<" Test kernel run ...\n";
 
-  if(benchmark::validate(baseline_result.ptr(),optimized_result.ptr(),NlocalGrads+NhaloGrads))
+  if(benchmark::validate(baseline_result.ptr(),modified_result.ptr(),NlocalGrads+NhaloGrads))
        std::cout<<" Validation check passed...\n";
 
   // =================================================================================>
