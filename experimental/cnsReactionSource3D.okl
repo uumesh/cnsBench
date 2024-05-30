@@ -1,0 +1,68 @@
+// Compressible Navier-Stokes
+@kernel void cnsReactionSource3D(const dlong Nelements,
+                                 const dfloat gamma,
+                                 @restrict const dfloat * A_pre,
+                                 @restrict const dfloat * E_act,
+                                 @restrict const dfloat * MWi,
+                                 @restrict const int * rx_coeff,
+                                 @restrict const  dfloat *  q,
+                                 @restrict dfloat *  omega_dot){
+
+  for(dlong e=0;e<Nelements;++e;@outer(0)){
+
+    for(int k=0;k<p_Nq;++k;@inner(2)){
+      for(int j=0;j<p_Nq;++j;@inner(1)){
+        for(int i=0;i<p_Nq;++i;@inner(0)){
+
+          // conserved variables
+          const dlong  qbase = e*p_Np*p_Nfields + k*p_Nq*p_Nq + j*p_Nq + i;
+          const dfloat r  = q[qbase+0*p_Np];
+          const dfloat ru = q[qbase+1*p_Np];
+          const dfloat rv = q[qbase+2*p_Np];
+          const dfloat rw = q[qbase+3*p_Np];
+          const dfloat E  = q[qbase+4*p_Np];
+          dfloat Y[p_Nspecies], X[p_Nspecies];
+
+          // primitive variables (velocity)
+          const dfloat u = ru/r, v = rv/r, w = rw/r;
+          
+          dfloat MWmix = 0.0;   // local molar weight of the mixture
+          dfloat sumY = 0.0;
+
+          for(int k=0;k<p_Nspecies-1;++k) {
+            Y[k] = q[qbase+(5+k)*p_Np]/r;
+            sumY  = sumY + Y[k];
+            MWmix = MWmix + MWi[k]*Y[k];
+          }
+          // Species N
+          Y[p_Nspecies-1] = std::max(1.0 - sumY,0.0);
+          MWmix = MWmix + (MWi[p_Nspecies] * Y[p_Nspecies-1]);
+          const dfloat T = (gamma-1)*(E - 0.5*(u*u+v*v+w*w)) / (r * R_univ/MWmix);
+
+          // Convert mass fractions to mole fractions
+          for(int k=0;k<p_Nspecies;++k) {
+            X[k] = Y[k] * MWmix / MWi[k];
+          }
+
+          dfloat rates_rx[p_Nrxns];
+          // Compute reaction rates
+          for(int l=0;l<p_Nrxns;++l) {
+            rates_rx[l] = A_pre[l]*exp(-E_act[l]/T);
+          }
+
+          // Compute the source terms
+          const dlong wbase = e*p_Np*p_Nspecies + k*p_Nq*p_Nq + j*p_Nq + i;
+          for(int k=0;k<p_Nspecies;++k) {
+            dfloat omega_dot_k = 0.0;
+            for(int l=0;l<p_Nrxns;++l) {
+              int a = k+1, b=k+2;
+              omega_dot_k += rx_coeff[k*p_Nspecies+l]*rates_rx[l]*X[a]*X[b];
+            }
+            omega_dot[wbase+k*p_Np] = omega_dot_k;
+          }
+
+        }
+      }
+    }
+  }
+}
