@@ -119,13 +119,13 @@ int main(int argc, char **argv)
 
       // Initialize species mass fractions of (Nspecies-1) species
       dfloat sumY = 0.0;
-      for(int k=1;k<Nspecies;++k) {
+      for(int k=0;k<Nspecies-1;++k) {
         cns.q[id+(5+k)*Np] = 1.0 + distribution(gen);
         sumY = sumY + (cns.q[id+(5+k)*Np] / cns.q[id+0*Np]);
       }
       sumY = sumY + (1.0 + distribution(gen)); // The Nth species
       // Normalize species mass fractions
-      for(int k=1;k<Nspecies;++k) {
+      for(int k=0;k<Nspecies-1;++k) {
         cns.q[id+(5+k)*Np] = cns.q[id+(5+k)*Np] / sumY;
       }
     }
@@ -182,6 +182,7 @@ int main(int argc, char **argv)
   kernelInfo["defines/" "p_Nspecies"] = Nspecies;
   kernelInfo["defines/" "p_Nrxns"] = Nrxns;
   kernelInfo["defines/" "R_univ"] = 8314.4598;
+  // Pass autoGRF flag
 
   char fileName[BUFSIZ], kernelName[BUFSIZ];
   sprintf(fileName, DCNS "/experimental/cnsReactionSource3D.okl");
