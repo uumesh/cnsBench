@@ -1,4 +1,5 @@
 // Compressible Navier-Stokes
+#include <math.h>
 @kernel void cnsReactionSource3D(const dlong Nelements,
                                  const dfloat gamma,
                                  @restrict const dfloat * A_pre,
@@ -55,7 +56,7 @@
           for(int k=0;k<p_Nspecies;++k) {
             dfloat omega_dot_k = 0.0;
             for(int l=0;l<p_Nrxns;++l) {
-              int a = k+1, b=k+2;
+              int a = l % p_Nspecies, b = l % (p_Nspecies-1);
               omega_dot_k += rx_coeff[k*p_Nspecies+l]*rates_rx[l]*X[a]*X[b];
             }
             omega_dot[wbase+k*p_Np] = omega_dot_k;
